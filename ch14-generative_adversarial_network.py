@@ -12,7 +12,7 @@ from tensorflow.keras.optimizers import RMSprop
 import pandas as pd
 from matplotlib import pyplot as plt
 
-data_dir = '/Users/earvin/workspaces/GithubProjects/tensorflow/scripts/BOOK_DLI16/Ch14/quickdraw_data'
+data_dir = '/Users/earvin/workspaces/GithubProjects/BOOK_DLI16/SAMPLE_CODES/Ch14/quickdraw_data'
 input_images = data_dir + '/apple.npy'
 
 print("data_dir= ", data_dir)
