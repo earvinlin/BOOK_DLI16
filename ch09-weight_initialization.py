@@ -15,8 +15,8 @@ w_init = glorot_uniform()
 
 model = Sequential()
 model.add(Dense(n_dense,
-            input_dim=n_input,
-            kernel_initializer=w_init, # 設定權重初始值
+            input_dim=n_input,          # 接收784個輸入值
+            kernel_initializer=w_init,  # 設定權重初始值
             bias_initializer=b_init))
 
 # 使用的激活函數 (為了方便修改程式碼，將此獨立出來)
@@ -26,7 +26,7 @@ model.add(Activation('tanh'))
 
 
 
-# 產生輸入資料
+# 產生輸入資料，並算出密集層256個神經元的激活值
 x = np.random.random((1, n_input))
 # use predict()將輸入資料x傳入密集層，以前向傳播算出這一層所有神經元(256個)的激活值a
 a = model.predict(x)
