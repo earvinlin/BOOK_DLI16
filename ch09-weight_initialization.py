@@ -1,8 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Activation
-from tensorflow.keras.initializers import Zeros, RandomNormal, glorot_normal, glorot_uniform
+#-- macnb can run (2025.06.29) STR --#
+#from tensorflow.keras.models import Sequential
+#from tensorflow.keras.layers import Dense, Activation
+#from tensorflow.keras.initializers import Zeros, RandomNormal, glorot_normal, glorot_uniform
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import Dense, Activation
+from keras.initializers import Zeros, RandomNormal, glorot_normal, glorot_uniform
+#-- macnb can run (2025.06.29) END --#
 
 n_input = 784 # 此密集層接收784個輸入值
 n_dense = 256 # 256個神經元
